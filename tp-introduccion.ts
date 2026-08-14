@@ -67,6 +67,17 @@ enum DiasSemana {
 
 
 // 7) Martina | Tipos de unión (`string | number`)
+
+let jugador: string | number;
+jugador = "Messi";
+jugador = 10;
+
+
+
 // 8) Martina | interfaz genérica `Fila<T>`
+
+
+
+
 // 9) Lucia | Instanciación de filas genéricas tipadas
 // 10) Lucia | inserción yremoción de elementos.
