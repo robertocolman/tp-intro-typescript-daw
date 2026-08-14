@@ -76,8 +76,22 @@ jugador = 10;
 
 // 8) Martina | interfaz genérica `Fila<T>`
 
+interface Fila<T> {
+    agregar(elemento: T): void;
+    remover(): T | undefined;
+}
 
+class FilaGenerica<T> implements Fila<T> {
+    private elementos: T[] = [];
 
+    agregar(elemento: T): void {
+        this.elementos.push(elemento);
+    }
+
+    remover(): T | undefined {
+        return this.elementos.shift();
+    }
+}
 
 // 9) Lucia | Instanciación de filas genéricas tipadas
 // 10) Lucia | inserción yremoción de elementos.
