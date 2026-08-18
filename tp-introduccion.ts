@@ -45,7 +45,16 @@ class Vaca implements Animal {
 }
 
 // 3) Esteban | Función polimórfica
+
+function describirAnimal(animal: Animal): void {
+    console.log(El animal ${animal.nombre} hace ${animal.gritar()});
+}
+
 // 4) Esteban | instanciación tipada de animales.
+
+const perro: Perro = new Perro("Pancho");
+const gato: Gato = new Gato("Juan");
+const vaca: Vaca = new Vaca("Lola");
 
 // 5) Nahuel | Ejecución de `describirAnimal`
 
