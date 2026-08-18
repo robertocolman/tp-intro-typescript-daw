@@ -94,4 +94,25 @@ class FilaGenerica<T> implements Fila<T> {
 }
 
 // 9) Lucia | Instanciación de filas genéricas tipadas
-// 10) Lucia | inserción yremoción de elementos.
+
+const filaNumeros: FilaGenerica<number> = new FilaGenerica<number>();
+const filaStrings: FilaGenerica<string> = new FilaGenerica<string>();
+const filaAnimales: FilaGenerica<Animal> = new FilaGenerica<Animal>();
+
+// 10) Lucia | inserción y remoción de elementos.
+
+filaAnimales.agregar(perro);
+filaAnimales.agregar(gato);
+filaAnimales.agregar(vaca);
+
+filaNumeros.agregar(10);
+filaNumeros.agregar(20);
+filaNumeros.agregar(30);
+
+filaStrings.agregar("Torta");
+filaStrings.agregar("Bizcochos");
+filaStrings.agregar("Facturas");
+
+filaAnimales.remover();
+filaNumeros.remover();
+filaStrings.remover();
